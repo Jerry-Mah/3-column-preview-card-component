@@ -1,0 +1,94 @@
+html{
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+*,*::before,*::after{
+    box-sizing: inherit;
+}
+
+body{
+    margin:0;
+    padding:0;
+    font-family: Lexend Deca,sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    background-color:$veryLightGray;
+    color:$transparentWhite;
+}
+
+h1,h2,h3{
+    margin:0;
+    font-family:Big Shoulders Display,sans-serif;
+    font-weight: 700;
+    color: $veryLightGray;
+}
+button{
+    padding:1.2rem 2.13rem;
+    background-color: $veryLightGray;
+    border:none;
+    outline:none;
+    border-radius: 50px;
+    cursor:pointer;
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+    padding:5.73rem 1.46rem;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrapper{
+    height: 30rem;
+    width: 21.4rem;
+    
+}
+
+.padding{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-right: 3rem;
+    padding-left:3rem;
+}
+
+#one{
+    background-color: $brightOrange;
+    border-radius: 8px 8px 0 0 ;
+    .btn{
+        color:$brightOrange;
+        &:hover{
+            background-color:$brightOrange;
+            color:$veryLightGray;
+            border: 2px solid $veryLightGray;
+        }
+    }
+}
+#two{
+    background-color: $darkCyan;
+    .btn{
+        color:$darkCyan;
+        &:hover{
+            background-color:$darkCyan;
+            color:$veryLightGray;
+            border: 2px solid $veryLightGray;
+        }
+    }
+}
+#three{
+    background-color: $veryDarkCyan;
+    border-radius: 0 0 8px 8px ;
+    .btn{
+        color:$veryDarkCyan;
+        &:hover{
+            background-color:$veryDarkCyan;
+            color:$veryLightGray;
+            border: 2px solid $veryLightGray;
+        }
+    }
+    
+}
+
+
