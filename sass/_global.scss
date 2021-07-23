@@ -10,35 +10,62 @@ html{
 body{
     margin:0;
     padding:0;
+    min-height: 100vh;
     font-family: Lexend Deca,sans-serif;
     font-weight: 400;
     font-size: 15px;
     background-color:$veryLightGray;
     color:$transparentWhite;
+    overflow-x: hidden;
+    @include breakpoint-up(large){
+        overflow-y: hidden;
+    }
 }
 
 h1,h2,h3{
     margin:0;
+    margin-top:2.933rem;
+    margin-bottom:2.26rem;
     font-family:Big Shoulders Display,sans-serif;
     font-weight: 700;
     color: $veryLightGray;
+    text-transform: uppercase;
 }
+p{
+    line-height: 1.6;
+    margin:0;
+    margin-bottom: 27px;
+}
+
 button{
-    padding:1.2rem 2.13rem;
+    // padding:1.2rem 2.13rem;
+    height: 3.066rem;
+    width: 9.733rem;
     background-color: $veryLightGray;
     border:none;
     outline:none;
     border-radius: 50px;
     cursor:pointer;
+    @include breakpoint-up(large){
+        position:absolute;
+        bottom: 20%;
+    }
+    transition: all 300ms ease;
 }
 
 .container{
+    position:relative;
     height: 100%;
     width: 100%;
     padding:5.73rem 1.46rem;
     display:flex;
     flex-direction: column;
     align-items: center;
+
+    @include breakpoint-up(large){
+        flex-direction: row;
+        justify-content: center;
+    }
 }
 
 .wrapper{
@@ -57,6 +84,9 @@ button{
 #one{
     background-color: $brightOrange;
     border-radius: 8px 8px 0 0 ;
+    @include breakpoint-up(large){
+        border-radius: 8px 0 0 8px;
+    }
     .btn{
         color:$brightOrange;
         &:hover{
@@ -80,6 +110,9 @@ button{
 #three{
     background-color: $veryDarkCyan;
     border-radius: 0 0 8px 8px ;
+    @include breakpoint-up(large){
+        border-radius: 0 8px 8px 0;
+    }
     .btn{
         color:$veryDarkCyan;
         &:hover{
